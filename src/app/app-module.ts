@@ -8,12 +8,14 @@ import { MenuComponent } from './components/menu.component/menu.component';
 import { FormsModule } from '@angular/forms';
 import { provideHttpClient } from '@angular/common/http';
 import { ServiceDepartamentos } from './services/service.departamentos';
+import { CreateComponent } from './components/create.component/create.component';
 
 @NgModule({
   declarations: [
     App,
     DepartamentosComponent,
-    MenuComponent
+    MenuComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,
