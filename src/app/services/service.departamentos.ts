@@ -15,6 +15,12 @@ export class ServiceDepartamentos {
         return this._http.get<Array<Departamento>>(url);
     }
 
+    getDepartamento(id: number): Observable<Departamento> {
+        let request = "api/Departamentos/" + id;
+        let url = environment.urlDepartamentos + request;
+        return this._http.get<Departamento>(url);
+    }
+
     createDepartamento(departamento: Departamento): Observable<any> {
         //IGUAL QUE EN REACT O EN JQUERY
         let json = JSON.stringify(departamento);
