@@ -1,4 +1,16 @@
 <div>
     <h1 class="text-center">Detalles</h1><br>
-    
+    <br>
+    <div class="p-5">
+        <ul class="list-group" *ngIf="departamento">
+            <li class="p-2 bg-info list-group-item">NUMERO</li>
+            <li class="list-group-item p-2">{{departamento.numero}}</li>
+            <li class="p-2 bg-info list-group-item">NOMBRE</li>
+            <li class="list-group-item p-2">{{departamento.nombre}}</li>
+            <li class="p-2 bg-info list-group-item">LOCALIDAD</li>
+            <li class="list-group-item p-2">{{departamento.localidad}}</li>
+        </ul>
+        <br>
+        <a [routerLink]="['/']" class="btn btn-info">Volver</a>
+    </div>
 </div>
