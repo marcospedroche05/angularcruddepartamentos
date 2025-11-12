@@ -1,0 +1,13 @@
+<div>
+    <h1 class="text-center">Modificar departamento</h1>
+    <br>
+    <form class="p-5" #formEdit="ngForm" *ngIf="departamento" (submit)="editarDepartamento()">
+        <label>Número: </label><br>
+        <input type="number" #cajanumero name="cajanumero" class="form-control" disabled defaultValue="{{departamento.numero}}"/><br>
+        <label>Nombre: </label><br>
+        <input type="text" #cajanombre name="cajanombre" class="form-control" defaultValue="{{departamento.nombre}}"/><br>
+        <label>Localidad: </label><br>
+        <input type="text" #cajalocalidad name="cajalocalidad" class="form-control" defaultValue="{{departamento.localidad}}"/><br>
+        <button class="btn btn-info">Guardar cambios</button>
+    </form>
+</div>

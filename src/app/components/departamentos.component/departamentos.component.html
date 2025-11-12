@@ -17,6 +17,7 @@
                     <td>{{dept.nombre}}</td>
                     <td>{{dept.localidad}}</td>
                     <td><a [routerLink]="['/details', dept.numero]" class="btn btn-success">Detalles</a></td>
+                    <td><a [routerLink]="['/update', dept.numero]" class="btn btn-warning">Editar</a></td>
                 </tr>
             }
         </tbody>

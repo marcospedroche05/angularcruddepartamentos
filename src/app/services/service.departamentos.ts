@@ -31,4 +31,12 @@ export class ServiceDepartamentos {
         let url = environment.urlDepartamentos + request;
         return this._http.post(url, json, {headers: header});
     }
+
+    editDepartamento(departamento: Departamento): Observable<any> {
+        let json = JSON.stringify(departamento);
+        let header = new HttpHeaders().set("Content-type", "application/json");
+        let request = "api/Departamentos";
+        let url = environment.urlDepartamentos + request;
+        return this._http.put(url, json, {headers: header});
+    }
 }
