@@ -16,8 +16,9 @@
                     <td>{{dept.numero}}</td>
                     <td>{{dept.nombre}}</td>
                     <td>{{dept.localidad}}</td>
-                    <td><a [routerLink]="['/details', dept.numero]" class="btn btn-success">Detalles</a></td>
-                    <td><a [routerLink]="['/update', dept.numero]" class="btn btn-warning">Editar</a></td>
+                    <td><a [routerLink]="['/details', dept.numero]" class="btn btn-outline-success">Detalles</a></td>
+                    <td><a [routerLink]="['/update', dept.numero]" class="btn btn-outline-warning">Editar</a></td>
+                    <td><button class="btn btn-outline-danger" (click)="eliminarDepartamento(dept.numero)">Eliminar</button></td>
                 </tr>
             }
         </tbody>
